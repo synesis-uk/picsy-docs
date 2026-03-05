@@ -49,5 +49,8 @@
     "color": {
       "dark": "#18748f"
     }
+  },
+  "appearance": {
+    "strict": true
   }
 }
