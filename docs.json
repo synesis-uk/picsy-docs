@@ -1,0 +1,113 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "PICSy Documentation",
+  "colors": {
+    "primary": "#18748f",
+    "light": "#00fefe",
+    "dark": "#29324f"
+  },
+  "favicon": "/logomark-docs.svg",
+  "navigation": {
+    "dropdowns": [
+      {
+        "dropdown": "Guides",
+        "tabs": [
+          {
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Getting started",
+                "pages": [
+                  "index",
+                  "quickstart"
+                ]
+              },
+              {
+                "group": "Core Concepts",
+                "pages": [
+                  "hexagons",
+                  "core/catchments",
+                  "population-projections",
+                  "core/catchment-models",
+                  "control-bar",
+                  "metrics",
+                  "filters",
+                  "region-types"
+                ]
+              },
+              {
+                "group": "Sites",
+                "icon": "location-check",
+                "pages": [
+                  "sites/overview",
+                  "sites/demographics",
+                  "sites/classification",
+                  "sites/supply",
+                  "sites/planning",
+                  "sites/location",
+                  "sites/analyst",
+                  "sites/reports",
+                  "sites/3-d-view",
+                  "sites/street-view"
+                ]
+              },
+              {
+                "group": "Market Finder",
+                "icon": "map",
+                "pages": [
+                  "essentials/markdown"
+                ]
+              },
+              {
+                "group": "Tools",
+                "icon": "toolbox",
+                "pages": [
+                  "comparison"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Test Tab"
+          }
+        ]
+      },
+      {
+        "dropdown": "Reference"
+      }
+    ]
+  },
+  "logo": "/logo/logo-docs.svg",
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:hi@picsy.uk"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
+    }
+  },
+  "contextual": {
+    "options": [
+     "copy",
+     "view",
+     "chatgpt",
+     "claude",
+     "perplexity",
+     "mcp",
+     "cursor",
+     "vscode"
+   ]
+  },
+  "background": {
+    "decoration": "gradient",
+    "color": {
+      "dark": "#18748f"
+    }
+  }
+}
