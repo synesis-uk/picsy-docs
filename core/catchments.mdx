@@ -3,10 +3,18 @@ title: "Catchments"
 slug: "/core/catchments"
 ---
 
-Rather than show coarse outlines or overly-detailed drivetime shapes, we map radius and drivetime geometry to our hex grid, allowing you to see the extent of your chosen catchment type and range 
+Rather than show coarse outlines or overly-detailed drivetime shapes, we map radius and drivetime geometry to our hex grid, allowing you to see the extent of your chosen catchment type and range using the same units regardless of the location you are analysing - the centre of London is mapped and displayed in the same way a Cotswold village or the Yorkshire Dales, so you have granular and comparable metrics across every location you view.
 
- are highly customisable - allowing radius (1-10miles) or drivetime (1-25 mins)
+<Frame caption="Total population within 20 minutes of a location near Epsom, Surrey">
+  ![Image](/images/image-3.png)
+</Frame>
+
+## Catchment-level metrics
+
+The metric views in the app show an aggregate of the individual hexagons' values - so for example the total populaiton in a catchment is simply the sum of the populaiton in each hexagon in the catchment. Where metrics are averaged, we use weighting to reflect 
 
 ## Editable Catchments
 
-PICSy also allows you to edit your catchments
+Catchments on the main view can be set from 1-10 miles radius or 1-25 minute drive time. But since those ranges can often include the edge of an area that isn't relevant to your analysis, or may contain most but not all of an area that is, you can also customise your catchment using the 'Edit Catchment' tool, which lets you toggle indivudual hexagons in or out of your catchment.
+
+Clicking the click the 'Edit' icon shows an overlay of the hexes on the edge of your catchment - click those to add or remove individual hexagons. When you're done click the 'Edit' tool again to turn that view off, and click 'Save' to save your changes.
