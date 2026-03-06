@@ -7,14 +7,16 @@ slug: "/core/population-projections"
 
 Population projections allow you to add dimension of detail to your demographic analysis. In PICSy this is as simple as dragging a slider - anywhere the population projections are available you will see a slider with a calendar icon and the currently selected year.
 
-<video autoPlay loop muted playsInline allowFullScreen src="/videos/pop-projection-demand-01.mp4" controls={true} />
+<video autoPlay={true} loop={true} muted={true} playsInline={true} allowFullScreen={true} src="/videos/pop-projection-demand-01.mp4" controls={true} />
 
 Change that value and every metric that is related to population will update live in the app.
 
-<video autoPlay loop muted playsInline allowFullScreen src="/videos/pop-projection-01.mp4" controls={true} />
+<video autoPlay={true} loop={true} muted={true} playsInline={true} allowFullScreen={true} src="/videos/pop-projection-01.mp4" controls={true} />
 
 Saving your site, market-finder search, comparison or target group will also save the currerntly selected population projection year.
 
 ## Where does this data come from?
 
-The ONS provides population projections at the Local Authority District level, so in PICSy we apply that data for each hexagon to adjust its metrics for your chosen projection year. In catchments that touch multiple Local Authorities, the calculation is done per-hex, so if your catchment is half in one Local Authority and half in another, or if it touches 15 different Local Authorities, the metrics will be projected using the corresponding data for each hex individually.
+The ONS provides population projections at the Local Authority District level, so in PICSy we apply that data for each hexagon according to the Local Authority it is in, to adjust its metrics for your chosen projection year.
+
+In catchments that touch multiple Local Authorities, the calculation is done per-hex, so if your catchment is half in one Local Authority and half in another, or if it touches 15 different Local Authorities, the metrics will be projected using the corresponding data for each hex individually.
