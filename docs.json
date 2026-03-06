@@ -26,12 +26,12 @@
               {
                 "group": "Core Concepts",
                 "pages": [
-                  "hexagons",
+                  "core/hexagons",
                   "core/catchments",
-                  "population-projections",
+                  "core/population-projections",
                   "core/catchment-models",
-                  "control-bar",
-                  "filters"
+                  "core/control-bar",
+                  "core/filters"
                 ]
               },
               {
