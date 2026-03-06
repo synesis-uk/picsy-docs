@@ -54,15 +54,13 @@
               {
                 "group": "Market Finder",
                 "icon": "map",
-                "pages": [
-                  "essentials/markdown"
-                ]
+                "pages": []
               },
               {
                 "group": "Tools",
                 "icon": "toolbox",
                 "pages": [
-                  "comparison"
+                  "tools/comparison"
                 ]
               },
               "preferences"
