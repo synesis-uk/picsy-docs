@@ -9,12 +9,73 @@
   },
   "favicon": "/logomark-docs.svg",
   "navigation": {
-    "groups": [
+    "dropdowns": [
       {
-        "group": "Documentation",
-        "pages": [
-          "index"
+        "dropdown": "Guides",
+        "tabs": [
+          {
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Getting started",
+                "pages": [
+                  "index",
+                  "quickstart"
+                ]
+              },
+              {
+                "group": "Core Concepts",
+                "pages": [
+                  "hexagons",
+                  "core/catchments",
+                  "population-projections",
+                  "core/catchment-models",
+                  "control-bar",
+                  "metrics",
+                  "filters",
+                  "region-types"
+                ]
+              },
+              {
+                "group": "Sites",
+                "icon": "location-check",
+                "expanded": false,
+                "pages": [
+                  "sites/overview",
+                  "sites/demographics",
+                  "sites/classification",
+                  "sites/supply",
+                  "sites/planning",
+                  "sites/location",
+                  "sites/analyst",
+                  "sites/reports",
+                  "sites/3-d-view",
+                  "sites/street-view"
+                ]
+              },
+              {
+                "group": "Market Finder",
+                "icon": "map",
+                "pages": [
+                  "essentials/markdown"
+                ]
+              },
+              {
+                "group": "Tools",
+                "icon": "toolbox",
+                "pages": [
+                  "comparison"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Test Tab"
+          }
         ]
+      },
+      {
+        "dropdown": "Reference"
       }
     ]
   },
