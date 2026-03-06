@@ -4,3 +4,25 @@ slug: "/core/hexagons"
 ---
 
 Everything in PICSy uses a hexagon grid that maps locations and demographics at a granular level. This allow you to see the way metrics are distributed across a catchment, giving you detailed perspective on any location.
+
+They are coloured according to their relative values for your selected metric, from yellow (lowest) to orange (highest), letting you see at-a-glance which areas where 
+
+<Frame caption="Hexagons showing total population for each area in a catchment">
+  ![Image](/images/image-2.png)
+</Frame>
+
+On the main site view, when the map is zoomed in those hexagons will show you the individual values. 
+
+<Frame caption="Values for total population in each individual hexagon">
+  ![Image](/images/image-1.png)
+</Frame>
+
+## How do they work?
+
+We have mapped the geometries of the underlying data sources - from national and regional level down to the smallest geometries that those sources provide - postcode units or ONS Output Areas, with many stages in-between (LSOA, MSOA, Local Authority district boundaries, Local Planning authority boundaies, County/Unitary Authority boundaires, and so on).
+
+That mapping allows us to assign the data from those diverse geometries to the standardised hex grid, which then provides a unified view of each metric for over 230,000 hexagons across England and Wales.
+
+## Where do the hexagons come from?
+
+The grid uses [H3-Geo](https://h3geo.org/docs) - an open-source global hexagonal indexing system widely adopted across navigation, logistics, mobility, mapping, and spatial analytics, used by organisations such as Uber, Grab, Delivery Hero, and others to cluster locations, model catchments, analyse coverage, and compare places consistently across different geographies.
