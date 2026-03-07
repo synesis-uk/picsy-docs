@@ -31,7 +31,8 @@
                   "core/population-projections",
                   "core/catchment-models",
                   "core/control-bar",
-                  "core/filters"
+                  "core/filters",
+                  "core/map-layers"
                 ]
               },
               {
