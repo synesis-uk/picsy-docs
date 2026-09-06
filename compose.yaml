@@ -1,0 +1,30 @@
+name: picsy-docs
+
+services:
+  docs:
+    image: node:22-bookworm-slim
+    working_dir: /docs
+    init: true
+    restart: unless-stopped
+    # Match the npm setting used to create the existing lockfile.
+    command: sh -c "npm ci --legacy-peer-deps && npm run dev -- --no-open"
+    volumes:
+      - .:/docs
+      - docs_node_modules:/docs/node_modules
+      - mint_cache:/root/.mintlify
+    networks:
+      - proxy
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: proxy
+      traefik.http.routers.picsy-docs.rule: Host(`docs.picsy.local`)
+      traefik.http.routers.picsy-docs.entrypoints: web
+      traefik.http.services.picsy-docs.loadbalancer.server.port: "3000"
+
+volumes:
+  docs_node_modules:
+  mint_cache:
+
+networks:
+  proxy:
+    external: true

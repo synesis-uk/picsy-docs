@@ -4,6 +4,20 @@ This repository contains the user documentation published at [docs.picsy.uk](htt
 
 ## Local development
 
+To use `http://docs.picsy.local` with the existing local Traefik proxy, add
+`127.0.0.1 docs.picsy.local` to your Windows hosts file, then run:
+
+```bash
+docker compose up -d
+```
+
+The first start installs dependencies and prepares the Mintlify preview. Follow
+startup with `docker compose logs -f docs`. Edits reload automatically. Stop the
+preview with `docker compose down`. The external Docker network `proxy` and
+Traefik must already be running.
+
+Alternatively, run the preview directly:
+
 You need Node.js and npm.
 
 ```bash
