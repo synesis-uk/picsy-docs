@@ -1,0 +1,11 @@
+{
+  "name": "picsy-docs",
+  "private": true,
+  "scripts": {
+    "dev": "mint dev",
+    "check:links": "mint broken-links"
+  },
+  "devDependencies": {
+    "mint": "4.2.871"
+  }
+}

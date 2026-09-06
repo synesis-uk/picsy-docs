@@ -1,0 +1,33 @@
+* {
+  border-radius: 0 !important;
+}
+
+.docs-screenshot {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  outline: 1px solid rgb(0 0 0 / 10%);
+  outline-offset: -1px;
+}
+
+.dark .docs-screenshot {
+  outline-color: rgb(255 255 255 / 10%);
+}
+
+.responsive-columns {
+  --picsy-columns: min(1, var(--cols, 1));
+  grid-template-columns: repeat(var(--picsy-columns), minmax(0, 1fr)) !important;
+}
+
+@container columns-container (min-width: 36rem) {
+  .responsive-columns {
+    --picsy-columns: min(2, var(--cols, 1));
+  }
+}
+
+@container columns-container (min-width: 64rem) {
+  .responsive-columns {
+    --picsy-columns: var(--cols, 1);
+  }
+}

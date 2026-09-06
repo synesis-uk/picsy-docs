@@ -1,0 +1,51 @@
+---
+title: "Edit a catchment"
+description: "Include or exclude individual hexes and nearby built-up areas."
+---
+
+Use catchment editing when the generated boundary needs a local adjustment. Start with the closest suitable type and range, then make only the changes you need.
+
+## Edit individual hexes
+
+<Steps>
+  <Step title="Start editing">
+    Open **Catchment settings** and select **Edit**. PICSy shows the edge hexes available to change.
+
+    <img
+      className="docs-screenshot"
+      src="/images/guides/catchment-edit-control-annotated.png"
+      style={{ width: 480 }}
+      alt="Catchment settings with a red circle around the Edit button."
+    />
+  </Step>
+  <Step title="Change the boundary">
+    Select a green hex outside the catchment to include it. Select a red hex inside the catchment to exclude it. Select the same hex again to undo that edit.
+
+    <img
+      className="docs-screenshot"
+      src="/images/guides/catchment-hex-editor.png"
+      alt="Catchment hex editing enabled, showing green hexes outside the boundary, red hexes inside it, and the Done button in Catchment settings."
+    />
+  </Step>
+  <Step title="Finish editing">
+    Select **Done** when the boundary is right.
+  </Step>
+</Steps>
+
+The map and analysis update as you edit. Only hexes at the edge of the catchment can be changed.
+
+## Change built-up-area inclusion
+
+When a nearby built-up area is available, hover over it to reveal its **+** or **−** control.
+
+- select **+** to include the built-up area
+- select **−** to exclude it
+
+The boundary and figures update immediately. If no controls appear, there are no built-up areas available to change for the current catchment.
+
+## Reset or save the edit
+
+- Select **Reset** in **Catchment settings** to remove every manual hex and built-up-area change. This does not change the catchment type or range.
+- Open **Save** and choose **Save current** to keep the edited version as a named variation.
+
+Next, learn how to change [population projections and comparisons](/analysis/projections-and-comparisons).

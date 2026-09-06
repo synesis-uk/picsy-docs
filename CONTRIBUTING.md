@@ -1,34 +1,37 @@
-> **Customize this file**: Tailor this template to your project by noting specific contribution types you're looking for, adding a Code of Conduct, or adjusting the writing guidelines to match your style.
+# Contribute to the PICSy documentation
 
-# Contribute to the documentation
+The docs should help a PICSy user complete a real task without needing to understand how the application is configured internally.
 
-Thank you for your interest in contributing to our documentation! This guide will help you get started.
+## Make a change
 
-## How to contribute
+1. Create a branch from the latest default branch.
+2. Run `npm install` if dependencies are not installed.
+3. Run `npm run dev` and review the page in the local Mintlify preview.
+4. Run `npm run check:links`.
+5. Open a pull request and review the Mintlify preview deployment.
 
-### Option 1: Edit directly on GitHub
+## Writing style
 
-1. Navigate to the page you want to edit
-2. Click the "Edit this file" button (the pencil icon)
-3. Make your changes and submit a pull request
+- Lead with the outcome the reader wants.
+- Write directly to the reader using “you”.
+- Keep the tone concise, clear and informal.
+- Use sentence case for headings.
+- Put interface labels in bold, such as **Catchment settings**.
+- Use the exact label shown in PICSy.
+- Prefer a short procedure to a long description of the interface.
+- Explain an unfamiliar term when it first matters.
 
-### Option 2: Local development
+## Screenshots
 
-1. Fork and clone this repository
-2. Install the Mintlify CLI: `npm i -g mint`
-3. Create a branch for your changes
-4. Make changes
-5. Navigate to the docs directory and run `mint dev`
-6. Preview your changes at `http://localhost:3000`
-7. Commit your changes and submit a pull request
+- Prefer a 16:9 source capture, such as 1920×1080, then crop it for the page.
+- Use another aspect ratio when it explains the interface better.
+- Use the current PICSy interface and non-sensitive example data.
+- Show enough of the screen to orient the reader.
+- Add an image only when it makes a step easier to understand than text alone.
+- Recheck screenshots when the documented workflow changes.
 
-For more details on local development, see our [development guide](development.mdx).
+## Scope
 
-## Writing guidelines
+The initial docs cover simple site use: adding a site, analysing it, configuring catchments, projections and comparisons, map settings, exports, Benchmarking, Target Search and Directories.
 
-- **Use active voice**: "Run the command" not "The command should be run"
-- **Address the reader directly**: Use "you" instead of "the user"
-- **Keep sentences concise**: Aim for one idea per sentence
-- **Lead with the goal**: Start instructions with what the user wants to accomplish
-- **Use consistent terminology**: Don't alternate between synonyms for the same concept
-- **Include examples**: Show, don't just tell
+Do not document organisation setup, workspace configuration, print-layout editing, bundles, internal scene configuration, admin tools or methodology unless the scope is explicitly expanded.

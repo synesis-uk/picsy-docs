@@ -1,24 +1,50 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "maple",
   "name": "PICSy Documentation",
+  "description": "Practical guides to analysing sites with PICSy.",
   "colors": {
     "primary": "#18748f",
-    "light": "#00fefe",
-    "dark": "#29324f"
+    "light": "#67e8f9",
+    "dark": "#18748f"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Inter"
+    },
+    "body": {
+      "family": "Inter"
+    }
   },
   "favicon": "/logomark-docs.svg",
+  "logo": "/logo/logo-docs.svg",
   "navigation": {
     "groups": [
       {
-        "group": "Documentation",
+        "group": "Get started",
+        "pages": ["index", "get-started/add-your-first-site"]
+      },
+      {
+        "group": "Analyse a site",
         "pages": [
-          "index"
+          "analysis/overview",
+          "analysis/configure-a-catchment",
+          "analysis/edit-a-catchment",
+          "analysis/projections-and-comparisons",
+          "analysis/map-settings",
+          "analysis/export"
+        ]
+      },
+      {
+        "group": "Other tools",
+        "pages": [
+          "tools/benchmarking",
+          "tools/target-search",
+          "tools/directories"
         ]
       }
     ]
   },
-  "logo": "/logo/logo-docs.svg",
   "navbar": {
     "links": [
       {
@@ -28,27 +54,21 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open PICSy",
+      "href": "https://app.picsy.uk"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "background": {
-    "decoration": "gradient",
-    "color": {
-      "dark": "#18748f"
-    }
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "appearance": {
     "strict": true
